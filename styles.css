@@ -1,22 +1,46 @@
 body{
 font-family:Arial;
-max-width:800px;
+max-width:900px;
 margin:auto;
 padding:20px;
+background-color:#f0f8ff;
+color:#1a1a1a;
 }
 
 header{
 display:flex;
 justify-content:space-between;
 align-items:center;
+background-color:#d6ecff;
+padding:15px;
+border-radius:10px;
 }
 
 nav a{
-margin-left:10px;
+margin-left:15px;
 text-decoration:none;
-color:black;
+color:#003366;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#0077cc;
+}
+
+h1{
+color:#003366;
+}
+
+h2{
+color:#005b99;
+}
+
+hr{
+border:1px solid #cce7ff;
+margin:20px 0;
 }
 
 footer{
 margin-top:40px;
+color:#555;
 }
