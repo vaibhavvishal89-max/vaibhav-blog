@@ -1,40 +1,87 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Contact</title>
-<link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Contact | Vaibhav Vishal</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
-
 <body>
-<header>
-<h1>Contact</h1>
-<nav>
-<a href="index.html">Blog</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+  <div class="container header">
+    <div class="header-inner">
+      <div class="brand">
+        <img class="avatar" src="profile.jpg" alt="Vaibhav Vishal" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <h1>Vaibhav Vishal</h1>
+          <p>Operations & Supply Chain • Leadership • Growth</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button id="themeToggle" class="icon-btn" type="button">🌙 Dark</button>
+      </div>
+    </div>
+  </div>
 
-<main>
+  <main class="container">
+    <section class="hero">
+      <h2>Contact</h2>
+      <p class="lead">Send a message or book a short call.</p>
+    </section>
 
-<h2>Contact</h2>
+    <section class="grid">
+      <div class="card">
+        <h3>Message me</h3>
+        <p class="muted">Tip: set up Formspree and replace the URL below.</p>
+        <hr class="sep"/>
 
-<form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-<input type="text" name="name" placeholder="Your Name" required/>
-<input type="email" name="email" placeholder="Your Email" required/>
-<textarea name="message" placeholder="Message"></textarea>
-<button type="submit">Send</button>
-</form>
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <label class="muted">Name</label>
+          <input name="name" required placeholder="Your name"/>
 
-<h2>Book a Call</h2>
-<a href="https://calendly.com/YOUR_HANDLE/15min">Book 15 Minutes</a>
+          <div style="height:10px"></div>
 
-</main>
+          <label class="muted">Email</label>
+          <input name="email" type="email" required placeholder="you@email.com"/>
 
-<footer>
-<p>© 2026 Vaibhav Vishal</p>
-</footer>
+          <div style="height:10px"></div>
+
+          <label class="muted">Message</label>
+          <textarea name="message" required placeholder="What would you like to discuss?"></textarea>
+
+          <button class="primary" type="submit">Send</button>
+        </form>
+      </div>
+
+      <aside class="card" id="book">
+        <h3>Booking</h3>
+        <p class="muted">
+          Quick conversations for leadership, operations problem-solving, or career decision support.
+        </p>
+        <hr class="sep"/>
+        <a class="icon-btn" href="https://calendly.com/YOUR_HANDLE/15min" target="_blank" rel="noreferrer">
+          Book 15 minutes
+        </a>
+
+        <hr class="sep"/>
+        <h3>Good topics</h3>
+        <ul class="list">
+          <li>Career decisions (stay vs move, growth path)</li>
+          <li>Executive follow-ups and stakeholder messaging</li>
+          <li>Ops mechanisms: metrics, cadence, bottlenecks</li>
+          <li>Relocation planning checklist</li>
+        </ul>
+      </aside>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="year"></span> Vaibhav Vishal</div>
+      <div><a href="index.html" style="color:var(--link);text-decoration:none;font-weight:700">Back to Blog</a></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
