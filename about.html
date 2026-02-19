@@ -1,37 +1,69 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>About</title>
-<link rel="stylesheet" href="styles.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About | Vaibhav Vishal</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
-
 <body>
-<header>
-<h1>About Me</h1>
-<nav>
-<a href="index.html">Blog</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-</header>
+  <div class="container header">
+    <div class="header-inner">
+      <div class="brand">
+        <img class="avatar" src="profile.jpg" alt="Vaibhav Vishal" onerror="this.style.display='none'">
+        <div class="brand-text">
+          <h1>Vaibhav Vishal</h1>
+          <p>Operations & Supply Chain • Leadership • Growth</p>
+        </div>
+      </div>
+      <div class="nav">
+        <a href="index.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <button id="themeToggle" class="icon-btn" type="button">🌙 Dark</button>
+      </div>
+    </div>
+  </div>
 
-<main>
-<p>
-I’m an Operations & Supply Chain leader at a global tech company focused on
-scaling teams, building mechanisms, and delivering measurable results.
-</p>
+  <main class="container">
+    <section class="hero">
+      <h2>About</h2>
+      <p class="lead">A short bio and what I write about.</p>
+    </section>
 
-<p>
-This blog is about leadership, career growth, relocation decisions,
-personal finance, and staying consistent with health while leading
-high-performance teams.
-</p>
-</main>
+    <section class="grid">
+      <div class="card">
+        <h3>My focus</h3>
+        <p class="muted">
+          I’m an operations and supply chain leader focused on scaling teams, building durable mechanisms,
+          and delivering measurable results.
+        </p>
+        <hr class="sep"/>
+        <h3>Topics</h3>
+        <ul class="list">
+          <li>Operations excellence, execution rhythms, metrics, and mechanisms</li>
+          <li>Career growth (director-track thinking, stakeholder management)</li>
+          <li>International relocation decision-making and planning</li>
+          <li>Personal finance (trade-offs, savings, long-term goals)</li>
+          <li>Health & consistency while life is busy</li>
+        </ul>
+      </div>
 
-<footer>
-<p>© 2026 Vaibhav Vishal</p>
-</footer>
+      <aside class="card">
+        <h3>Quick links</h3>
+        <p class="muted">Want to connect?</p>
+        <a class="icon-btn" href="contact.html#book">Book a call</a>
+        <div style="height:10px"></div>
+        <a class="icon-btn" href="contact.html">Send a message</a>
+      </aside>
+    </section>
+
+    <div class="footer">
+      <div>© <span id="year"></span> Vaibhav Vishal</div>
+      <div><a href="index.html" style="color:var(--link);text-decoration:none;font-weight:700">Back to Blog</a></div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
